@@ -60,7 +60,7 @@ public class IfController
 		}
 		catch (NumberFormatException error)
 		{
-			JOptionPane.showMessageDialog(null, "What are you going to do with  your life?");
+			JOptionPane.showMessageDialog(null, "Do you personally like to play the guitar?");
 		}
 		
 		return isValid;
@@ -112,12 +112,12 @@ public class IfController
 		Guitar userGuitar = new Guitar();
 		
 		//ask
-		String response = JOptionPane.showInputDialog(null, "What is the distance???");
+		String response = JOptionPane.showInputDialog(null, "How many frets on a guitar???");
 			
 		//repeat until finished correctly
 		while (response == null || !validDouble(response) || response.equals("Give the right answer"))
 		{
-		response = JOptionPane.showInputDialog(null, "No! Type in a valid nubmer for the distance or don't press cancel.");
+		response = JOptionPane.showInputDialog(null, "No! Type in a valid nubmer for the frests or don't press cancel.");
 		}
 		//assign and convert
 		userGuitar.setScale(Double.parseDouble(response));
